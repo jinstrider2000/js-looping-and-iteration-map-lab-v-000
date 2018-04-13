@@ -10,6 +10,6 @@ function nameToAttributes(drivers) {
   });
 }
 
-function attributesToPhrase() {
-
+function attributesToPhrase(drivers) {
+  return drivers.map((element) => `${element.name} is from ${element.hometown}`);
 }
